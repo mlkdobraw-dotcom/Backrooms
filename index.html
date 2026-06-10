@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BACKROOMS</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-text">BACKROOMS</div>
+    <div class="loader-sub">initializing...</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- PAGE WRAPPER -->
+  <div id="page" class="hidden">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-logo">BACKROOMS</div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#levels">LEVELS</a></li>
+        <li><a href="#entities">ENTITIES</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#about">ABOUT</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-tagline">If you're not careful and you noclip out of reality,<br>you'll end up here.</p>
+        <p class="hero-welcome">WELCOME TO THE</p>
+        <h1 class="hero-title">BACKROOMS</h1>
+        <p class="hero-sub">EXPLORE THE UNKNOWN.</p>
+        <a href="#levels" class="btn-primary">EXPLORE LEVELS</a>
+      </div>
+      <div class="scroll-arrow">&#8964;</div>
+    </section>
+
+    <!-- LEVELS SECTION -->
+    <section id="levels" class="section levels-section">
+      <h2 class="section-title">THE LEVELS</h2>
+      <p class="section-sub">Discover the different levels of the Backrooms.</p>
+      <div class="cards-grid">
+
+        <div class="card reveal">
+          <img src="images/download (3).jpeg" alt="" class="card-img">
+          <div class="card-body">
+            <h3>LEVEL 0</h3>
+            <p>The first level.<br>Endless, empty, and quiet.<br>Stay close to the walls.</p>
+            <button class="btn-outline" onclick="openLevel0()">VIEW MORE</button>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80')"></div>
+          <div class="card-body">
+            <h3>LEVEL 1</h3>
+            <p>A dangerous place.<br>The lights hum louder here.<br>Something is always watching.</p>
+            <button class="btn-outline" onclick="openModal('modal-level1')">VIEW MORE</button>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=600&q=80')"></div>
+          <div class="card-body">
+            <h3>LEVEL 2</h3>
+            <p>Darkness. Water. Silence.<br>Not all exits lead out.<br>Be careful where you go.</p>
+            <button class="btn-outline" onclick="openModal('modal-level2')">VIEW MORE</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ENTITIES SECTION -->
+    <section id="entities" class="section entities-section">
+      <h2 class="section-title">ENTITIES</h2>
+      <p class="section-sub">You are not alone.</p>
+      <div class="cards-grid">
+
+        <div class="card reveal">
+          <div class="card-img entity-img" style="background-image: url('https://images.unsplash.com/photo-1635372722656-389f87a941b7?w=600&q=80')"></div>
+          <div class="card-body">
+            <h3>SMILER</h3>
+            <p>It always smiles.<br>It knows you're here.</p>
+            <button class="btn-outline">VIEW FILE</button>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-img entity-img" style="background-image: url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80')"></div>
+          <div class="card-body">
+            <h3>HOUND</h3>
+            <p>Fast. Aggressive.<br>You won't hear it coming.</p>
+            <button class="btn-outline">VIEW FILE</button>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-img entity-img" style="background-image: url('https://images.unsplash.com/photo-1570533813519-f7c0ccf1fae6?w=600&q=80')"></div>
+          <div class="card-body">
+            <h3>SKIN-STEALER</h3>
+            <p>It wears you.<br>Don't let it find you.</p>
+            <button class="btn-outline">VIEW FILE</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALLERY PLACEHOLDER -->
+    <section id="gallery" class="section gallery-section">
+      <h2 class="section-title">GALLERY</h2>
+      <p class="section-sub">Photographs taken by survivors.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Backrooms.jpg/800px-Backrooms.jpg')"></div>
+        <div class="gallery-item reveal" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80')"></div>
+        <div class="gallery-item reveal" style="background-image: url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=600&q=80')"></div>
+        <div class="gallery-item reveal" style="background-image: url('https://images.unsplash.com/photo-1570533813519-f7c0ccf1fae6?w=600&q=80')"></div>
+      </div>
+    </section>
+
+    <!-- MODAL LEVEL 0 -->
+    <div id="modal-level0" class="modal-overlay" onclick="closeLevel0(event)">
+      <div class="modal-page">
+
+        <!-- MODAL HERO -->
+        <div class="modal-hero">
+          <div class="modal-hero-bg"></div>
+          <div class="modal-hero-overlay"></div>
+          <div class="modal-hero-content">
+            <h1 class="modal-level-title">LEVEL 0</h1>
+            <p class="modal-level-sub">THE LOBBY</p>
+            <p class="modal-level-desc">
+              Level 0 is the first level<br>
+              of the Backrooms.<br>
+              It appears as an infinite maze<br>
+              of empty, windowless rooms<br>
+              with yellow walls and a<br>
+              musty, stale atmosphere.
+            </p>
+          </div>
+          <button class="modal-close" onclick="closeLevel0(event)">&#10005;</button>
+        </div>
+
+        <!-- MODAL INFO GRID -->
+        <div class="modal-grid">
+
+          <div class="modal-card">
+            <div class="modal-card-header">
+              <span class="modal-icon">&#9783;</span>
+              <span>OVERVIEW</span>
+            </div>
+            <ul class="modal-list">
+              <li>Difficulty: <span class="val-safe">Safe</span></li>
+              <li>Class: <span class="val-accent">0</span></li>
+              <li>Habitat: <span>Indoor</span></li>
+              <li>Survival Rate: <span>High</span></li>
+              <li>Entities: <span>None known</span></li>
+              <li>Exits: <span>Unknown</span></li>
+            </ul>
+          </div>
+
+          <div class="modal-card">
+            <div class="modal-card-header">
+              <span class="modal-icon">&#9673;</span>
+              <span>APPEARANCE</span>
+            </div>
+            <p class="modal-text">
+              Level 0 is composed of endless, randomly generated rooms and corridors.
+            </p>
+            <p class="modal-text">
+              The walls are covered in old, yellowish wallpaper, the floor is moist carpet,
+              and the ceiling is filled with buzzing fluorescent lights.
+            </p>
+          </div>
+
+          <div class="modal-card">
+            <div class="modal-card-header">
+              <span class="modal-icon">&#9881;</span>
+              <span>CHARACTERISTICS</span>
+            </div>
+            <ul class="modal-bullets">
+              <li>Endless and maze-like</li>
+              <li>No windows or natural light</li>
+              <li>Constant buzzing of fluorescent lights</li>
+              <li>The air is stale and slightly humid</li>
+              <li>No signs of life or movement</li>
+            </ul>
+          </div>
+
+          <div class="modal-card">
+            <div class="modal-card-header">
+              <span class="modal-icon">&#9888;</span>
+              <span>DANGERS</span>
+            </div>
+            <p class="modal-text">
+              Level 0 is generally considered safe.
+              <strong>However, the real danger is the psychological effect
+              of being trapped in an infinite, empty place with no way out.</strong>
+            </p>
+          </div>
+
+          <div class="modal-card">
+            <div class="modal-card-header">
+              <span class="modal-icon">&#128161;</span>
+              <span>TIPS</span>
+            </div>
+            <ul class="modal-bullets">
+              <li>Stay calm and keep moving.</li>
+              <li>Try to find an exit, though they are extremely rare.</li>
+              <li>Avoid noclipping further into the unknown.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- MODAL FOOTER -->
+        <div class="modal-footer">
+          <span>&#9888;</span>
+          <span>REALITY IS AN ILLUSION. THE BACKROOMS ARE REAL.</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MODAL LEVEL 1 - LEVEL FUN -->
+    <div id="modal-level1" class="modal-overlay" onclick="closeModal('modal-level1', event)">
+      <div class="modal-page">
+        <div class="modal-hero">
+          <div class="modal-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&q=80'); filter: sepia(0.4) brightness(0.4) saturate(1.5) hue-rotate(-10deg);"></div>
+          <div class="modal-hero-overlay"></div>
+          <div class="modal-hero-content">
+            <h1 class="modal-level-title">LEVEL FUN</h1>
+            <p class="modal-level-sub" style="color:#c0392b;">THE PARTY</p>
+            <p class="modal-level-desc">
+              Level Fun appears as a colorful<br>
+              and playful place, but behind<br>
+              the smiles and balloons lies<br>
+              one of the most dangerous levels<br>
+              in the Backrooms.
+            </p>
+          </div>
+          <button class="modal-close" onclick="closeModal('modal-level1', event)">&#10005;</button>
+        </div>
+        <div class="modal-grid">
+          <div class="modal-card">
+            <div class="modal-card-header"><span class="modal-icon">&#9783;</span><span>OVERVIEW</span></div>
+            <ul class="modal-list">
+              <li>Difficulty: <span class="val-danger">Very High</span></li>
+              <li>Class: <span class="val-accent">5</span></li>
+              <li>Habitat: <span>Indoor</span></li>
+              <li>Survival Rate: <span class="val-danger">Very Low</span></li>
+              <li>Entities: <span>Partygoers</span></li>
+              <li>Exits: <span>Rare</span></li>
+            </ul>
+          </div>
+          <div class="modal-card">
+            <div class="modal-card-header"><span class="modal-icon">&#9673;</span><span>APPEARANCE</span></div>
+            <p class="modal-text">Level Fun is filled with bright colors, balloons, banners, and confetti. The walls are covered in childish drawings and messages like "FUN!" and "COME JOIN THE PARTY!".</p>
+            <p class="modal-text">The lights flicker sometimes, and cheerful music can be heard in the distance.</p>
+          </div>
+          <div class="modal-card">
+            <div class="modal-card-header"><span class="modal-icon">&#9881;</span><span>CHARACTERISTICS</span></div>
+            <ul class="modal-bullets">
+              <li>Colorful and festive environment</li>
+              <li>Balloons, confetti, and party decorations everywhere</li>
+              <li>Cheery music and distant laughter</li>
+              <li>Infinite maze-like layout</li>
+              <li>Some areas may look slightly different, but never the same</li>
+            </ul>
+          </div>
+          <div class="modal-card">
+            <div class="modal-card-header"><span class="modal-icon">&#9888;</span><span>DANGERS</span></div>
+            <ul class="modal-bullets">
+              <li>Home to the Partygoers, who will try to make you join their party</li>
+              <li>Being caught by a Partygoer can result in being turned into one of them</li>
+              <li>Disorienting layout can lead to endless wandering</li>
+              <li>False sense of safety due to its playful look</li>
+            </ul>
+          </div>
+          <div class="modal-card">
+            <div class="modal-card-header"><span class="modal-icon">&#128161;</span><span>TIPS</span></div>
+            <ul class="modal-bullets">
+              <li>Do not trust the Partygoers</li>
+              <li>Avoid eye contact and keep moving</li>
+              <li>Stay quiet and stick to the walls</li>
+              <li>Finding an exit is extremely rare</li>
+              <li>Do not stay too long in one place</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer"><span>&#9888;</span><span>REALITY IS AN ILLUSION. THE BACKROOMS ARE REAL.</span></div>
+      </div>
+    </div>
+
+    <!-- MODAL LEVEL 2 - THE POOLROOMS -->
+    <div id="modal-level2" class="modal-overlay" onclick="closeModal('modal-level2', event)">
+      <div class="modal-page modal-poolrooms">
+        <div class="modal-hero">
+          <div class="modal-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1200&q=80'); filter: sepia(0.6) brightness(0.35) saturate(1.4) hue-rotate(140deg);"></div>
+          <div class="modal-hero-overlay"></div>
+          <div class="modal-hero-content">
+            <h1 class="modal-level-title" style="color:#a0f0d0;">THE POOLROOMS</h1>
+            <p class="modal-level-sub" style="color:#3dbf9a;">LEVEL 37</p>
+            <p class="modal-level-desc">
+              Level 37, also known as The<br>
+              Poolrooms, is a level composed<br>
+              of infinite, surreal pools and<br>
+              tiled rooms. The water is<br>
+              deep, the silence is heavy,<br>
+              and something moves beneath<br>
+              the surface.
+            </p>
+          </div>
+          <button class="modal-close" onclick="closeModal('modal-level2', event)">&#10005;</button>
+        </div>
+        <div class="modal-grid modal-grid--pool">
+          <div class="modal-card modal-card--pool">
+            <div class="modal-card-header modal-card-header--pool"><span class="modal-icon">&#9783;</span><span>OVERVIEW</span></div>
+            <ul class="modal-list">
+              <li>Difficulty: <span class="val-high">High</span></li>
+              <li>Class: <span class="val-accent">3</span></li>
+              <li>Habitat: <span>Indoor / Aquatic</span></li>
+              <li>Survival Rate: <span class="val-low">Low</span></li>
+              <li>Entities: <span>Several</span></li>
+              <li>Exits: <span>Uncommon</span></li>
+            </ul>
+          </div>
+          <div class="modal-card modal-card--pool">
+            <div class="modal-card-header modal-card-header--pool"><span class="modal-icon">&#9673;</span><span>APPEARANCE</span></div>
+            <p class="modal-text">The Poolrooms are made up of vast, tiled spaces filled with deep, clear water. The architecture is surreal and inconsistent, with long hallways, staircases that descend into the water, and rooms that seem to stretch forever.</p>
+            <p class="modal-text">The lighting is dim and hazy, often reflected by the water's surface.</p>
+          </div>
+          <div class="modal-card modal-card--pool">
+            <div class="modal-card-header modal-card-header--pool"><span class="modal-icon">&#9881;</span><span>CHARACTERISTICS</span></div>
+            <ul class="modal-bullets">
+              <li>Endless, maze-like rooms filled with water</li>
+              <li>Water is usually calm, but depth is deceptive</li>
+              <li>Echoes travel far and are hard to locate</li>
+              <li>Temperature is cold and increases fatigue</li>
+              <li>Some rooms are completely <strong>dark or partially submerged</strong></li>
+            </ul>
+          </div>
+          <div class="modal-card modal-card--pool">
+            <div class="modal-card-header modal-card-header--pool"><span class="modal-icon">&#9888;</span><span>DANGERS</span></div>
+            <ul class="modal-bullets">
+              <li>Drowning is the most common cause of death</li>
+              <li>Unknown aquatic entities can attack from below</li>
+              <li>Getting lost in the endless layout can lead to exhaustion or madness</li>
+              <li>Some water may be deeper than it looks</li>
+              <li>Limited safe areas to rest</li>
+            </ul>
+          </div>
+          <div class="modal-card modal-card--pool">
+            <div class="modal-card-header modal-card-header--pool"><span class="modal-icon">&#128161;</span><span>TIPS</span></div>
+            <ul class="modal-bullets">
+              <li>Stay near walls and keep track of turns</li>
+              <li>Avoid entering deep water if possible</li>
+              <li>Listen for sounds behind you</li>
+              <li>Conserve energy and avoid <strong>unnecessary swimming</strong></li>
+              <li>Look for dry platforms or rooms to rest</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer modal-footer--pool"><span>&#9888;</span><span>REALITY IS AN ILLUSION. THE BACKROOMS ARE REAL.</span></div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="about" class="footer">
+      <p class="footer-left">Reality is an illusion.<br>The Backrooms are real.</p>
+      <p class="footer-center">:)</p>
+      <p class="footer-right">Created by Adrian<br>English Class - 2026</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
