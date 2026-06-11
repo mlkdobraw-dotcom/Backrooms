@@ -322,6 +322,8 @@ body {
   transition: filter 0.4s;
 }
 
+
+
 .card:hover .card-img {
   filter: sepia(0.8) brightness(0.65) saturate(1.8);
 }
@@ -393,6 +395,11 @@ body {
 .gallery-item:hover {
   filter: sepia(0.7) brightness(0.7) saturate(1.8);
   border-color: var(--yellow-dim);
+}
+
+.gallery-items-reveal{
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* ===== FOOTER ===== */
@@ -485,10 +492,31 @@ body {
   background: linear-gradient(to right, rgba(0,0,0,0.75) 40%, transparent 100%);
 }
 
-.modal-hero-content {
+.modal-hero-content-level-0{
   position: relative;
   z-index: 2;
   padding: 48px 52px;
+  background-image: url(../images/download\ \(3\).jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.modal-hero-content-poolrooms {
+    position: relative;
+  z-index: 2;
+  padding: 48px 52px;
+  background-image: url(../images/images\ \(3\).jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.modal-hero-content-level-fun{
+  position: relative;
+  z-index: 2;
+  padding: 48px 52px;
+  background-image: url(../images/download\ \(10\).jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .modal-level-title {
@@ -659,6 +687,62 @@ body {
 .modal-poolrooms {
   border-color: #1a3a35;
   box-shadow: 0 0 60px rgba(0, 180, 130, 0.1);
+}
+
+/* ===== MODAIS DE ENTIDADES ===== */
+.modal-entity {
+  border-color: #1a1a1a;
+}
+
+.modal-hero--entity {
+  height: 400px;
+}
+
+.entity-tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.4em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  border: 1px solid var(--border);
+  display: inline-block;
+  padding: 3px 10px;
+}
+
+.entity-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.entity-sub {
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  margin-top: 6px;
+}
+
+/* Smiler — tons cinza escuro */
+.modal-grid--entity      { border-color: #1a1a1a; }
+.modal-card--entity      { border-right-color: #1a1a1a; }
+.modal-card-header--entity {
+  color: #aaaaaa;
+  border-bottom-color: #1a1a1a;
+}
+.modal-footer--entity    { border-top-color: #1a1a1a; color: #333; }
+
+/* Hound — tons laranja */
+.modal-hound             { border-color: #2a1500; box-shadow: 0 0 60px rgba(180,80,0,0.1); }
+.modal-grid--hound       { border-color: #2a1500; }
+.modal-card--hound       { border-right-color: #2a1500; }
+.modal-card-header--hound {
+  color: #e07030;
+  border-bottom-color: #2a1500;
+}
+
+/* Skin-Stealer — tons roxo */
+.modal-skinstealer       { border-color: #1a1525; box-shadow: 0 0 60px rgba(100,60,180,0.1); }
+.modal-grid--skin        { border-color: #1a1525; }
+.modal-card--skin        { border-right-color: #1a1525; }
+.modal-card-header--skin {
+  color: #9070c0;
+  border-bottom-color: #1a1525;
 }
 
 /* ===== RESPONSIVE ===== */

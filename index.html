@@ -25,7 +25,7 @@
         <li><a href="#" class="active">HOME</a></li>
         <li><a href="#levels">LEVELS</a></li>
         <li><a href="#entities">ENTITIES</a></li>
-        <li><a href="#gallery">GALLERY</a></li>
+
         <li><a href="#about">ABOUT</a></li>
       </ul>
     </nav>
@@ -59,20 +59,20 @@
           </div>
         </div>
 
-        <div class="card reveal">
-          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80')"></div>
-          <div class="card-body">
-            <h3>LEVEL 1</h3>
-            <p>A dangerous place.<br>The lights hum louder here.<br>Something is always watching.</p>
+        <div class="card reveal-level-fun">
+          <img src="images/download (9).jpeg" alt="" class="card-img">
+          <div class="card-body" >
+            <h3>LEVEL FUN</h3>
+            <p>A level that seems fun at first..<br>but hidden a dark seceret.<br>Full of ballons, confetti and "Partygoer", that want you to stay forever.</p>
             <button class="btn-outline" onclick="openModal('modal-level1')">VIEW MORE</button>
           </div>
         </div>
 
-        <div class="card reveal">
-          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=600&q=80')"></div>
+        <div class="card reveal-poolrooms">
+          <img src="images/images (3).jpeg" alt="" class="card-img">
           <div class="card-body">
-            <h3>LEVEL 2</h3>
-            <p>Darkness. Water. Silence.<br>Not all exits lead out.<br>Be careful where you go.</p>
+            <h3>POOLROOMS</h3>
+            <p>The place is full of pools.<br>just you and the water...<br> or not.</p>
             <button class="btn-outline" onclick="openModal('modal-level2')">VIEW MORE</button>
           </div>
         </div>
@@ -87,29 +87,29 @@
       <div class="cards-grid">
 
         <div class="card reveal">
-          <div class="card-img entity-img" style="background-image: url('https://images.unsplash.com/photo-1635372722656-389f87a941b7?w=600&q=80')"></div>
+          <img src="images/download (14).jpeg" alt="" class="card-img entity-img">
           <div class="card-body">
             <h3>SMILER</h3>
             <p>It always smiles.<br>It knows you're here.</p>
-            <button class="btn-outline">VIEW FILE</button>
+            <button class="btn-outline" onclick="openModal('modal-smiler')">VIEW FILE</button>
           </div>
         </div>
 
         <div class="card reveal">
-          <div class="card-img entity-img" style="background-image: url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80')"></div>
+          <img src="images/images (4).jpeg" alt="" class="card-img entity-img">
           <div class="card-body">
             <h3>HOUND</h3>
             <p>Fast. Aggressive.<br>You won't hear it coming.</p>
-            <button class="btn-outline">VIEW FILE</button>
+            <button class="btn-outline" onclick="openModal('modal-hound')">VIEW FILE</button>
           </div>
         </div>
 
         <div class="card reveal">
-          <div class="card-img entity-img" style="background-image: url('https://images.unsplash.com/photo-1570533813519-f7c0ccf1fae6?w=600&q=80')"></div>
+          <img src="images/download (17).jpeg" alt="" class="card-img entity-img">
           <div class="card-body">
             <h3>SKIN-STEALER</h3>
             <p>It wears you.<br>Don't let it find you.</p>
-            <button class="btn-outline">VIEW FILE</button>
+            <button class="btn-outline" onclick="openModal('modal-skinstealer')">VIEW FILE</button>
           </div>
         </div>
 
@@ -117,16 +117,7 @@
     </section>
 
     <!-- GALLERY PLACEHOLDER -->
-    <section id="gallery" class="section gallery-section">
-      <h2 class="section-title">GALLERY</h2>
-      <p class="section-sub">Photographs taken by survivors.</p>
-      <div class="gallery-grid">
-        <div class="gallery-item reveal" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Backrooms.jpg/800px-Backrooms.jpg')"></div>
-        <div class="gallery-item reveal" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80')"></div>
-        <div class="gallery-item reveal" style="background-image: url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=600&q=80')"></div>
-        <div class="gallery-item reveal" style="background-image: url('https://images.unsplash.com/photo-1570533813519-f7c0ccf1fae6?w=600&q=80')"></div>
-      </div>
-    </section>
+   
 
     <!-- MODAL LEVEL 0 -->
     <div id="modal-level0" class="modal-overlay" onclick="closeLevel0(event)">
@@ -136,7 +127,7 @@
         <div class="modal-hero">
           <div class="modal-hero-bg"></div>
           <div class="modal-hero-overlay"></div>
-          <div class="modal-hero-content">
+          <div class="modal-hero-content-level-0">
             <h1 class="modal-level-title">LEVEL 0</h1>
             <p class="modal-level-sub">THE LOBBY</p>
             <p class="modal-level-desc">
@@ -236,9 +227,8 @@
     <div id="modal-level1" class="modal-overlay" onclick="closeModal('modal-level1', event)">
       <div class="modal-page">
         <div class="modal-hero">
-          <div class="modal-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&q=80'); filter: sepia(0.4) brightness(0.4) saturate(1.5) hue-rotate(-10deg);"></div>
           <div class="modal-hero-overlay"></div>
-          <div class="modal-hero-content">
+          <div class="modal-hero-content-level-fun">
             <h1 class="modal-level-title">LEVEL FUN</h1>
             <p class="modal-level-sub" style="color:#c0392b;">THE PARTY</p>
             <p class="modal-level-desc">
@@ -306,9 +296,8 @@
     <div id="modal-level2" class="modal-overlay" onclick="closeModal('modal-level2', event)">
       <div class="modal-page modal-poolrooms">
         <div class="modal-hero">
-          <div class="modal-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1200&q=80'); filter: sepia(0.6) brightness(0.35) saturate(1.4) hue-rotate(140deg);"></div>
           <div class="modal-hero-overlay"></div>
-          <div class="modal-hero-content">
+          <div class="modal-hero-content-poolrooms">
             <h1 class="modal-level-title" style="color:#a0f0d0;">THE POOLROOMS</h1>
             <p class="modal-level-sub" style="color:#3dbf9a;">LEVEL 37</p>
             <p class="modal-level-desc">
@@ -375,11 +364,223 @@
       </div>
     </div>
 
+    <!-- MODAL SMILER -->
+    <div id="modal-smiler" class="modal-overlay" onclick="closeModal('modal-smiler', event)">
+      <div class="modal-page modal-entity">
+        <div class="modal-hero modal-hero--entity">
+          <div class="modal-hero-overlay" style="background: linear-gradient(to right, rgba(0,0,0,0.9) 45%, transparent 100%);"></div>
+          <div class="modal-hero-content">
+            <p class="entity-tag">ENTITY #3</p>
+            <h1 class="modal-level-title entity-title">SMILER</h1>
+            <p class="modal-level-sub entity-sub">&#128512; IT ALWAYS SMILES</p>
+            <p class="modal-level-desc">
+              The Smiler is one of the most<br>
+              feared entities in the Backrooms.<br>
+              It hides in the darkness, visible<br>
+              only by its wide, glowing smile.<br>
+              By the time you see it —<br>
+              it is already too late.
+            </p>
+          </div>
+          <button class="modal-close" onclick="closeModal('modal-smiler', event)">&#10005;</button>
+        </div>
+        <div class="modal-grid modal-grid--entity">
+          <div class="modal-card modal-card--entity">
+            <div class="modal-card-header modal-card-header--entity"><span class="modal-icon">&#9783;</span><span>FILE</span></div>
+            <ul class="modal-list">
+              <li>Threat Level: <span class="val-danger">Extreme</span></li>
+              <li>Type: <span>Predatory</span></li>
+              <li>Habitat: <span>Dark areas</span></li>
+              <li>Speed: <span class="val-danger">Very Fast</span></li>
+              <li>Size: <span>Human-like</span></li>
+              <li>Status: <span class="val-danger">Active</span></li>
+            </ul>
+          </div>
+          <div class="modal-card modal-card--entity">
+            <div class="modal-card-header modal-card-header--entity"><span class="modal-icon">&#9673;</span><span>APPEARANCE</span></div>
+            <p class="modal-text">The Smiler appears as a dark, humanoid silhouette lurking in unlit corners. Its only visible feature is a wide, tooth-filled grin that glows faintly in the dark.</p>
+            <p class="modal-text">Some survivors report that it seems to mimic human posture, standing completely still until it decides to move.</p>
+          </div>
+          <div class="modal-card modal-card--entity">
+            <div class="modal-card-header modal-card-header--entity"><span class="modal-icon">&#9881;</span><span>BEHAVIOR</span></div>
+            <ul class="modal-bullets">
+              <li>Lurks in dark corners and unlit hallways</li>
+              <li>Does not move while being observed</li>
+              <li>Attacks the moment you look away</li>
+              <li>Appears to enjoy the fear of its prey</li>
+              <li>Can appear in groups in deeper levels</li>
+            </ul>
+          </div>
+          <div class="modal-card modal-card--entity">
+            <div class="modal-card-header modal-card-header--entity"><span class="modal-icon">&#9888;</span><span>DANGERS</span></div>
+            <ul class="modal-bullets">
+              <li>Attacks with extreme speed once you break eye contact</li>
+              <li>Darkness is its domain — it has full advantage</li>
+              <li>No known way to kill or repel it</li>
+              <li>Screaming or panicking attracts more Smilers</li>
+            </ul>
+          </div>
+          <div class="modal-card modal-card--entity">
+            <div class="modal-card-header modal-card-header--entity"><span class="modal-icon">&#128161;</span><span>SURVIVAL TIPS</span></div>
+            <ul class="modal-bullets">
+              <li>Never enter an unlit area without a light source</li>
+              <li>If you see a smile in the dark — do not run yet</li>
+              <li>Back away slowly while maintaining eye contact</li>
+              <li>Find a lit area as fast as possible</li>
+              <li>Do not travel alone in low-light levels</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer modal-footer--entity"><span>&#9888;</span><span>REALITY IS AN ILLUSION. THE BACKROOMS ARE REAL.</span></div>
+      </div>
+    </div>
+
+    <!-- MODAL HOUND -->
+    <div id="modal-hound" class="modal-overlay" onclick="closeModal('modal-hound', event)">
+      <div class="modal-page modal-entity modal-hound">
+        <div class="modal-hero modal-hero--entity">
+          <div class="modal-hero-overlay" style="background: linear-gradient(to right, rgba(0,0,0,0.9) 45%, transparent 100%);"></div>
+          <div class="modal-hero-content">
+            <p class="entity-tag">ENTITY #8</p>
+            <h1 class="modal-level-title entity-title" style="color:#e07030;">HOUND</h1>
+            <p class="modal-level-sub entity-sub" style="color:#a04020;">&#128585; YOU WON'T HEAR IT COMING</p>
+            <p class="modal-level-desc">
+              The Hound is a fast, aggressive<br>
+              predator that roams many levels<br>
+              of the Backrooms. It moves on<br>
+              all fours with terrifying speed<br>
+              and hunts primarily by sound<br>
+              and movement.
+            </p>
+          </div>
+          <button class="modal-close" onclick="closeModal('modal-hound', event)">&#10005;</button>
+        </div>
+        <div class="modal-grid modal-grid--entity modal-grid--hound">
+          <div class="modal-card modal-card--entity modal-card--hound">
+            <div class="modal-card-header modal-card-header--hound"><span class="modal-icon">&#9783;</span><span>FILE</span></div>
+            <ul class="modal-list">
+              <li>Threat Level: <span class="val-high">High</span></li>
+              <li>Type: <span>Feral / Predatory</span></li>
+              <li>Habitat: <span>Multiple levels</span></li>
+              <li>Speed: <span class="val-danger">Extremely Fast</span></li>
+              <li>Size: <span>Large dog-like</span></li>
+              <li>Status: <span class="val-danger">Active</span></li>
+            </ul>
+          </div>
+          <div class="modal-card modal-card--entity modal-card--hound">
+            <div class="modal-card-header modal-card-header--hound"><span class="modal-icon">&#9673;</span><span>APPEARANCE</span></div>
+            <p class="modal-text">The Hound resembles a large, hairless creature that moves on all fours. Its skin is dark and leathery, its eyes glow a deep orange-red, and its mouth is filled with uneven, sharp teeth.</p>
+            <p class="modal-text">It makes little to no sound while moving, making it nearly impossible to hear before it strikes.</p>
+          </div>
+          <div class="modal-card modal-card--entity modal-card--hound">
+            <div class="modal-card-header modal-card-header--hound"><span class="modal-icon">&#9881;</span><span>BEHAVIOR</span></div>
+            <ul class="modal-bullets">
+              <li>Hunts using sound — loud noises will attract it instantly</li>
+              <li>Moves in unpredictable, erratic patterns</li>
+              <li>Will chase prey relentlessly once locked on</li>
+              <li>Sometimes found in packs on dangerous levels</li>
+              <li>Territorial — it will patrol the same corridors repeatedly</li>
+            </ul>
+          </div>
+          <div class="modal-card modal-card--entity modal-card--hound">
+            <div class="modal-card-header modal-card-header--hound"><span class="modal-icon">&#9888;</span><span>DANGERS</span></div>
+            <ul class="modal-bullets">
+              <li>One of the fastest entities in the Backrooms</li>
+              <li>Nearly silent movement gives no warning before attack</li>
+              <li>Outrunning it is nearly impossible</li>
+              <li>Cornering yourself while fleeing is a common fatal mistake</li>
+            </ul>
+          </div>
+          <div class="modal-card modal-card--entity modal-card--hound">
+            <div class="modal-card-header modal-card-header--hound"><span class="modal-icon">&#128161;</span><span>SURVIVAL TIPS</span></div>
+            <ul class="modal-bullets">
+              <li>Move slowly and quietly at all times</li>
+              <li>Avoid running — vibrations and sound attract it</li>
+              <li>If spotted, throw an object in the opposite direction</li>
+              <li>Hide in small spaces it cannot enter</li>
+              <li>Never dead-end yourself in a corridor</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer modal-footer--entity"><span>&#9888;</span><span>REALITY IS AN ILLUSION. THE BACKROOMS ARE REAL.</span></div>
+      </div>
+    </div>
+
+    <!-- MODAL SKIN-STEALER -->
+    <div id="modal-skinstealer" class="modal-overlay" onclick="closeModal('modal-skinstealer', event)">
+      <div class="modal-page modal-entity modal-skinstealer">
+        <div class="modal-hero modal-hero--entity">
+          <div class="modal-hero-overlay" style="background: linear-gradient(to right, rgba(0,0,0,0.92) 45%, transparent 100%);"></div>
+          <div class="modal-hero-content">
+            <p class="entity-tag">ENTITY #17</p>
+            <h1 class="modal-level-title entity-title" style="color:#b0a0d0;">SKIN-STEALER</h1>
+            <p class="modal-level-sub entity-sub" style="color:#7060a0;">&#128100; IT WEARS YOU</p>
+            <p class="modal-level-desc">
+              The Skin-Stealer is among the<br>
+              most disturbing entities known.<br>
+              It mimics human form perfectly,<br>
+              wearing the appearance of those<br>
+              it has taken. You may not know<br>
+              it is there — until it is you.
+            </p>
+          </div>
+          <button class="modal-close" onclick="closeModal('modal-skinstealer', event)">&#10005;</button>
+        </div>
+        <div class="modal-grid modal-grid--entity modal-grid--skin">
+          <div class="modal-card modal-card--entity modal-card--skin">
+            <div class="modal-card-header modal-card-header--skin"><span class="modal-icon">&#9783;</span><span>FILE</span></div>
+            <ul class="modal-list">
+              <li>Threat Level: <span class="val-danger">Extreme</span></li>
+              <li>Type: <span>Mimic / Predatory</span></li>
+              <li>Habitat: <span>All levels</span></li>
+              <li>Speed: <span>Variable</span></li>
+              <li>Size: <span>Human-sized</span></li>
+              <li>Status: <span class="val-danger">Active</span></li>
+            </ul>
+          </div>
+          <div class="modal-card modal-card--entity modal-card--skin">
+            <div class="modal-card-header modal-card-header--skin"><span class="modal-icon">&#9673;</span><span>APPEARANCE</span></div>
+            <p class="modal-text">The Skin-Stealer appears as a tall, pale humanoid with elongated limbs and a blank, featureless face — in its natural state. However, it can perfectly mimic the appearance of any human it has encountered.</p>
+            <p class="modal-text">Up close, signs of its true nature emerge: slightly wrong proportions, delayed blinking, or an unnatural stillness.</p>
+          </div>
+          <div class="modal-card modal-card--entity modal-card--skin">
+            <div class="modal-card-header modal-card-header--skin"><span class="modal-icon">&#9881;</span><span>BEHAVIOR</span></div>
+            <ul class="modal-bullets">
+              <li>Mimics humans to approach without raising alarm</li>
+              <li>Observes from a distance before closing in</li>
+              <li>Rarely attacks openly — prefers isolation and deception</li>
+              <li>Can replicate voice and mannerisms of known people</li>
+              <li>Will not break its disguise unless cornered</li>
+            </ul>
+          </div>
+          <div class="modal-card modal-card--entity modal-card--skin">
+            <div class="modal-card-header modal-card-header--skin"><span class="modal-icon">&#9888;</span><span>DANGERS</span></div>
+            <ul class="modal-bullets">
+              <li>Nearly impossible to identify in disguise</li>
+              <li>Lures survivors into isolation before striking</li>
+              <li>May have already replaced someone in your group</li>
+              <li>Creates paranoia and distrust among survivors</li>
+            </ul>
+          </div>
+          <div class="modal-card modal-card--entity modal-card--skin">
+            <div class="modal-card-header modal-card-header--skin"><span class="modal-icon">&#128161;</span><span>SURVIVAL TIPS</span></div>
+            <ul class="modal-bullets">
+              <li>Establish a code word known only to your group</li>
+              <li>Watch for subtle wrongness: blinking, posture, timing</li>
+              <li>Never go anywhere alone with someone you just met</li>
+              <li>Trust your instincts — if something feels off, it is</li>
+              <li>Do not let it separate you from others</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer modal-footer--entity"><span>&#9888;</span><span>REALITY IS AN ILLUSION. THE BACKROOMS ARE REAL.</span></div>
+      </div>
+    </div>
+
     <!-- FOOTER -->
     <footer id="about" class="footer">
       <p class="footer-left">Reality is an illusion.<br>The Backrooms are real.</p>
       <p class="footer-center">:)</p>
-      <p class="footer-right">Created by Adrian<br>English Class - 2026</p>
     </footer>
 
   </div>
